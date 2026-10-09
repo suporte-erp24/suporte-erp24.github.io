@@ -1,0 +1,180 @@
+
+    /* --- CONFIGURAÇÃO DA PÁGINA (DESIGN CLEAN) --- */
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #FFFFFF; /* Fundo Branco */
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: #333333;
+    }
+
+    /* --- HEADER --- */
+    .legal-header {
+        background-color: #050505;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .legal-header-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .legal-logo img {
+        height: 60px;
+        width: auto;
+        display: block;
+    }
+
+    .legal-back-btn {
+        text-decoration: none;
+        color: #D4AF37;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+        padding: 0.6rem 1.5rem;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .legal-back-btn:hover {
+        background: rgba(212, 175, 55, 0.1);
+        border-color: #D4AF37;
+        transform: translateY(-2px);
+    }
+
+    /* --- CONTEÚDO --- */
+    .legal-wrapper {
+        background-color: #FFF;
+        min-height: 80vh;
+    }
+
+    .legal-content {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 4rem 1.5rem;
+    }
+
+    .legal-title {
+        font-family: 'Outfit', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #000;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    .legal-subtitle {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 3rem;
+        display: block;
+        border-bottom: 2px solid #D4AF37;
+        padding-bottom: 1.5rem;
+    }
+
+    .legal-text {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #444;
+    }
+
+    .legal-text h2 {
+        color: #000;
+        font-family: 'Outfit', sans-serif;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+        border-left: 4px solid #D4AF37;
+        padding-left: 1rem;
+    }
+
+    .legal-text p {
+        margin-bottom: 1.2rem;
+        text-align: justify;
+    }
+
+    .legal-text ul {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .legal-text li {
+        margin-bottom: 0.8rem;
+    }
+
+    .legal-text strong {
+        color: #000;
+    }
+    
+    .legal-text a {
+        color: #D4AF37;
+        text-decoration: underline;
+    }
+
+    /* --- FOOTER SIMPLES --- */
+    .legal-footer {
+        background-color: #050505;
+        border-top: 1px solid rgba(212, 175, 55, 0.3);
+        padding: 3rem 1.5rem;
+        color: #FFF;
+    }
+
+    .legal-footer-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .legal-footer-logo img {
+        height: 50px;
+        width: auto;
+        margin-bottom: 1rem;
+        opacity: 0.8;
+    }
+
+    .legal-footer-links {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .legal-footer-link {
+        color: #AAA;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.3s;
+    }
+
+    .legal-footer-link:hover {
+        color: #D4AF37;
+    }
+
+    .legal-footer-copy {
+        font-size: 0.8rem;
+        color: #555;
+        margin-top: 1rem;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        .legal-header { padding: 1rem; }
+        .legal-logo img { height: 40px; }
+        .legal-back-btn { padding: 0.5rem 1rem; font-size: 0.75rem; }
+        .legal-title { font-size: 2rem; }
+        .legal-footer-links { flex-direction: column; gap: 1rem; }
+    }

@@ -1,0 +1,3 @@
+# Versao de testes - nao indexar
+User-agent: *
+Disallow: /

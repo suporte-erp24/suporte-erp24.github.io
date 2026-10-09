@@ -1,0 +1,45 @@
+# Evoluir Empresas AI
+
+> Programas de transformação digital e inteligência artificial aplicada a processos para
+> PMEs portuguesas. Criada por Gabriel Gonçalves (CEO da ERP24) e Andreas Vilela
+> (CEO da SHARKCODERS). Opera em Portugal, em português.
+
+A Evoluir Empresas AI implementa IA nos processos de empresas que já cresceram mas cujos
+processos não acompanharam. O modelo assenta em três pilares que têm de estar alinhados —
+Liderança, Processos e Pessoas (o Triângulo da Transformação) — e num framework de
+diagnóstico de seis dimensões, o EVOLUI: Estratégia, Valor do Cliente, Operação, Liderança
+e Cultura, Universo de Dados, Inovação Tecnológica e IA.
+
+## Programas
+
+- [Mentoria EVOLUI](https://suporte-erp24.github.io/mentoria-evolui/): programa de 6 ou 12 meses para CEOs de PME.
+  Diagnóstico EVOLUI, roadmap trimestral, sessões mensais ao vivo, sessões abertas à equipa,
+  accountability em mini-grupo, presenciais trimestrais, sessão individual semestral e cinco
+  agentes de IA configurados com os dados da empresa (Co-CEO, Director Comercial, Director de
+  Operações, Gabinete de Processos, Director de Marketing). Certificado DGERT e elegível para
+  co-financiamento IEFP/FSE. Garantia de 30 dias.
+- [Boost](https://suporte-erp24.github.io/boost/): imersão presencial intensiva de 10 horas para CEOs de PME. Sai-se
+  com mais de cinco automações de IA prontas, um diagnóstico de maturidade digital e um plano
+  estratégico de 90 dias. Bilhete VIP inclui 60 minutos de consultoria individual.
+- [Boot Camp](https://suporte-erp24.github.io/boot-camp/): formação de IA por função (CEO, comercial, operações) —
+  prompts, automação, agentes e dados. Em preparação.
+
+## Quem está por trás
+
+- [Quem Somos](https://suporte-erp24.github.io/quem-somos/)
+- Gabriel Gonçalves — CEO da ERP24, especialista em BPM e transformação digital, 20 anos a
+  implementar sistemas em PMEs portuguesas, professor em MBAs executivos, doutorando em
+  agentes de IA aplicados a negócios.
+- Andreas Vilela — CEO da SHARKCODERS, engenheiro informático, software usado por mais de 30
+  milhões de pessoas, fundador da maior rede portuguesa de escolas de tecnologia.
+
+## Para quem é
+
+CEOs, diretores e fundadores de PMEs portuguesas, tipicamente entre 5 e 250 colaboradores,
+com equipa e operação real. Não serve quem trabalha sozinho nem quem procura assistir a uma
+formação sem implementar.
+
+## Condições legais
+
+- [Política de Privacidade](https://suporte-erp24.github.io/politica-de-privacidade/)
+- [Termos e Condições](https://suporte-erp24.github.io/termos-e-condicoes/)
