@@ -218,6 +218,9 @@ font-size:.8125rem;font-family:inherit}
 					--theme-color-title: hsl(194.47, 20%, 20%);
 					--theme-color-strict-inverse: #ffffff;
 				}
+html {font-size: 14px;}
+				body {font-size: 1rem;}
+				.g-font-size-default {font-size: 1rem;}
 main.landing-public-mode {
 					line-height: 1.6;
 					font-weight: 400;
