@@ -6,15 +6,15 @@
 <meta name="theme-color" content="#050505">
 <style>html{background:#050505}</style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mentoria EVOLUIR · Pede a tua conversa de diagnóstico · Evoluir Empresas AI</title>
-<meta name="description" content="Programa de implementação acompanhada para CEOs de PMEs: diagnóstico EVOLUI, roadmap de 90 dias, sessões ao vivo com Gabriel Gonçalves e Andreas Vilela e 5 agentes de IA configurados para a tua empresa.">
+<title>Mentoria EVOLUIR · Transformação Digital e IA para CEOs de PMEs · Evoluir Empresas AI</title>
+<meta name="description" content="Programa de transformação digital e IA para CEOs de PMEs: diagnóstico de maturidade digital com a Framework EVOLUI, roadmap de 90 dias e implementação de tecnologia, automação e agentes de IA — acompanhada por Gabriel Gonçalves e Andreas Vilela.">
 <meta name="robots" content="noindex,nofollow">
 <link rel="canonical" href="https://evoluirempresas.ai/lp/mentoria/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_PT">
 <meta property="og:site_name" content="Evoluir Empresas AI">
-<meta property="og:title" content="Mentoria EVOLUIR · Para CEOs que querem deixar de improvisar">
-<meta property="og:description" content="Diagnóstico completo, roadmap de 90 dias e acompanhamento real. Sem preço escondido — uma conversa primeiro.">
+<meta property="og:title" content="Mentoria EVOLUIR · Transformação Digital e IA para CEOs de PMEs">
+<meta property="og:description" content="Diagnóstico de maturidade digital, roadmap de 90 dias e implementação de IA acompanhada. Sem preço escondido — uma conversa primeiro.">
 <meta property="og:image" content="https://evoluirempresas.ai/assets/img/untitled_design_7_1x.webp">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
@@ -101,10 +101,32 @@ summary::-webkit-details-marker{display:none}
 summary::after{content:'+';margin-left:auto;color:var(--gold);font-size:1.4rem;line-height:1;transition:transform .2s}
 details[open] summary::after{transform:rotate(45deg)}
 details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
+/* FRAMEWORK */
+.fw{background:radial-gradient(ellipse 60% 50% at 50% 0%,rgba(212,175,55,.05) 0%,transparent 70%),var(--bg)}
+.fw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.8rem}
+@media(max-width:820px){.fw-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.fw-grid{grid-template-columns:1fr}}
+.fw-p{background:var(--bg2);border:1px solid var(--gold-bd);border-radius:12px;padding:1.4rem;position:relative;overflow:hidden}
+.fw-p b{position:absolute;right:.4rem;top:-.6rem;font-family:'Outfit',sans-serif;font-size:4.6rem;font-weight:900;color:rgba(212,175,55,.12);line-height:1}
+.fw-p h3{font-size:1.02rem;margin-bottom:.3rem}
+.fw-p p{color:var(--mid);font-size:.86rem;position:relative}
+.fw-nota{margin-top:1.4rem;color:var(--mid);font-size:.9rem;border-left:3px solid var(--gold);padding-left:1rem}
 /* FORM */
 .formsec{background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(212,175,55,.07) 0%,transparent 70%),var(--bg)}
 .formbox{max-width:680px;margin:2rem auto 0;background:var(--bg3);border:1px solid var(--gold-bd);border-radius:14px;padding:2rem;min-height:280px}
 .formbox .espera{color:var(--mid);font-size:.9rem;text-align:center;padding:2rem 0}
+.fcampo{text-align:left;margin-bottom:1rem}
+.fcampo label{display:block;font-size:.8rem;color:var(--mid);margin-bottom:.35rem;letter-spacing:.02em}
+.fcampo input{width:100%;background:#0a0a0a;border:1px solid #2a2a2a;border-radius:9px;color:#fff;font:inherit;padding:.85rem 1rem;transition:border-color .15s}
+.fcampo input:focus{outline:none;border-color:var(--gold)}
+.fconsent{display:flex;gap:.6rem;align-items:flex-start;text-align:left;font-size:.82rem;color:var(--mid);margin:1.1rem 0 1.3rem;cursor:pointer}
+.fconsent a{color:var(--gold)}
+.fconsent input{margin-top:.2rem;accent-color:var(--gold)}
+.fbtn{width:100%;border:0;cursor:pointer}
+.fbtn[disabled]{opacity:.6;cursor:wait;transform:none}
+.ferro{color:#ff9f9f;font-size:.85rem;margin-top:1rem}
+.fobrigado{font-size:1.05rem;color:#e8e8e8;padding:2rem 0}
+
 .alt{ text-align:center;margin-top:1.4rem;color:var(--mid);font-size:.9rem}
 .alt a{color:var(--gold)}
 /* FOOTER */
@@ -132,9 +154,9 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <span class="hero-chip"><i></i>Mentoria EVOLUIR · para CEOs de PMEs</span>
-    <h1>Se a tua empresa cresceu,<br><span class="hl">o improviso já não chega.</span></h1>
-    <p class="sub">Diagnóstico completo, roadmap de 90 dias e implementação acompanhada por dois CEOs que fazem isto todos os dias — com 5 agentes de IA configurados para a tua empresa.</p>
+    <span class="hero-chip"><i></i>Transformação Digital &amp; IA · Mentoria para CEOs de PMEs</span>
+    <h1>A IA não espera.<br><span class="hl">E a tua empresa?</span></h1>
+    <p class="sub">O programa de <b>transformação digital e IA</b> para CEOs de PMEs: diagnóstico de maturidade digital, roadmap de 90 dias e implementação de tecnologia, automação e agentes de IA — acompanhada por dois CEOs que fazem isto todos os dias.</p>
     <a class="btn" href="#pedir">Quero a conversa de diagnóstico →</a>
     <span class="hero-note">Sem compromisso. Sem preço escondido — uma conversa primeiro, da nossa parte e da tua.</span>
     <div class="prova">
@@ -163,12 +185,31 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
 <section class="sec">
   <div class="wrap">
     <span class="eyebrow">O método</span>
-    <h2>Primeiro entendemos onde estás.<br>Depois implementamos — contigo.</h2>
+    <h2>Primeiro medimos a tua maturidade digital.<br>Depois implementamos a tecnologia — contigo.</h2>
     <div style="margin-top:1.6rem">
       <div class="passo"><div class="num">1</div><div><h3>Diagnóstico EVOLUI</h3><p>150 perguntas, 6 pilares — Estratégia, Valor do Cliente, Operação, Liderança &amp; Cultura, Universo de Dados, Inovação &amp; IA. Sais com o teu score de maturidade digital e a fotografia real da empresa.</p></div></div>
       <div class="passo"><div class="num">2</div><div><h3>Roadmap de 90 dias</h3><p>Sessão 1-1 com o Gabriel e o Andreas para analisar os resultados: prioridades, quick wins e um plano concreto — não uma lista de desejos.</p></div></div>
-      <div class="passo"><div class="num">3</div><div><h3>Implementação acompanhada</h3><p>Sessões ao vivo 2× por mês, hotseats com o teu caso real, accountability em mini-grupo do teu nível e presenciais trimestrais. Alguém que te responsabiliza pela execução — é o que falta em tudo o resto.</p></div></div>
+      <div class="passo"><div class="num">3</div><div><h3>Implementação de tecnologia e IA — acompanhada</h3><p>Sessões ao vivo 2× por mês, hotseats com o teu caso real, automação e agentes de IA montados no teu negócio, accountability em mini-grupo e presenciais trimestrais. Alguém que te responsabiliza pela execução — é o que falta em tudo o resto.</p></div></div>
     </div>
+  </div>
+</section>
+
+
+<!-- FRAMEWORK EVOLUI -->
+<section class="sec fw">
+  <div class="wrap">
+    <span class="eyebrow">Conhecimento nosso · método proprietário</span>
+    <h2>A Framework EVOLUI.<br>O mapa da transformação digital de uma PME.</h2>
+    <p class="lead">Não aplicamos receitas de terceiros. A EVOLUI é a framework de maturidade digital que desenvolvemos e aplicámos em mais de 200 PMEs portuguesas — 6 pilares, 34 subtemas, ~150 perguntas, um score de N1 a N6.</p>
+    <div class="fw-grid">
+      <div class="fw-p"><b>E</b><h3>Estratégia</h3><p>Visão digital, prioridades, governance</p></div>
+      <div class="fw-p"><b>V</b><h3>Valor do Cliente</h3><p>Experiência, omnicanal, fidelização</p></div>
+      <div class="fw-p"><b>O</b><h3>Operação</h3><p>Processos, automação, qualidade</p></div>
+      <div class="fw-p"><b>L</b><h3>Liderança &amp; Cultura</h3><p>Compromisso, mindset, mudança</p></div>
+      <div class="fw-p"><b>U</b><h3>Universo de Dados</h3><p>BI, integração, decisões com dados</p></div>
+      <div class="fw-p"><b>I</b><h3>Inovação &amp; IA</h3><p>Infraestrutura, agentes, plataforma</p></div>
+    </div>
+    <p class="fw-nota">O teu score EVOLUI não é uma sentença — é o ponto de partida e a régua que mede o progresso, re-avaliada ao longo do programa.</p>
   </div>
 </section>
 
@@ -176,7 +217,7 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
 <section class="sec">
   <div class="wrap">
     <span class="eyebrow">O que está incluído</span>
-    <h2>Tudo o que precisas para implementar.</h2>
+    <h2>Tecnologia, processos e IA.<br>Tudo o que precisas para implementar.</h2>
     <div class="grid g3">
       <div class="card"><h3>2 sessões mensais ao vivo</h3><p>Conteúdo real, convidados e hotseats — o teu caso analisado ao vivo. Com gravação.</p></div>
       <div class="card"><h3>Sessões abertas à equipa</h3><p>Processos com o Gabriel, tecnologia e IA com o Andreas. Até 2 colaboradores incluídos — a transformação falha quando só o CEO aprende.</p></div>
@@ -281,8 +322,19 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
     <h2>Pede a tua conversa de diagnóstico.</h2>
     <p class="lead" style="margin:0 auto">Uma conversa para perceber se faz sentido. Respondemos no próprio dia útil.</p>
     <div class="formbox">
-      <div id="ev-form-slot"></div>
-      <p class="espera">A carregar o formulário…</p>
+      <form id="ev-form" novalidate>
+        <div class="fcampo"><label for="f-nome">Nome *</label><input id="f-nome" name="nome" type="text" autocomplete="name" required></div>
+        <div class="fcampo"><label for="f-email">Email profissional *</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="fcampo"><label for="f-tel">Telemóvel *</label><input id="f-tel" name="telefone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+        <div class="fcampo"><label for="f-emp">Empresa *</label><input id="f-emp" name="empresa" type="text" autocomplete="organization" required></div>
+        <input type="text" name="website" id="f-site" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-5000px;height:0;opacity:0">
+        <label class="fconsent"><input type="checkbox" id="f-ok" required> <span>Li e aceito a <a href="/politica-de-privacidade/" target="_blank" rel="noopener">Política de Privacidade</a>. *</span></label>
+        <button type="submit" class="btn fbtn" id="f-enviar">Pedir a conversa de diagnóstico →</button>
+        <p class="ferro" id="f-erro" hidden>Não foi possível enviar. Tenta outra vez — ou fala connosco no WhatsApp em baixo.</p>
+      </form>
+      <div id="f-sucesso" hidden>
+        <p class="fobrigado">✅ <b>Recebido.</b> Entramos em contacto no próprio dia útil para marcar a tua conversa de diagnóstico.</p>
+      </div>
     </div>
     <p class="alt">Preferes falar já? <a href="https://wa.me/351916053392?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20a%20Mentoria%20EVOLUIR." rel="noopener" target="_blank">Fala connosco no WhatsApp</a></p>
   </div>
@@ -303,34 +355,51 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
 <div class="sticky"><a class="btn" style="padding:.85rem 1.4rem;font-size:.9rem" href="#pedir">Pedir a conversa de diagnóstico →</a></div>
 
 <script>
-// O widget do CRM pesa ~400 KB + fontes externas: so arranca na primeira
-// interacao (scroll/CTA) ou ao fim de 3 s - fora do caminho critico.
+// Submissao direta ao CRM Bitrix24 (form 332) - endpoint publico dos formularios CRM,
+// o mesmo que o widget oficial usa. Sem tokens: id+sec sao publicos por design.
 (function(){
-  var feito=false;
-  function arrancar(){
-    if(feito)return; feito=true;
-    var slot=document.getElementById('ev-form-slot');
-    var s=document.createElement('script');
-    s.setAttribute('data-b24-form','inline/317/bj3bco');
-    s.setAttribute('data-skip-moving','true');
-    slot.appendChild(s);
-    var t=document.createElement('script');t.async=true;
-    t.src='https://fsn1.your-objectstorage.com/erp24/crm/form/loader_317_bj3bco.js?'+(Date.now()/180000|0);
-    document.head.appendChild(t);
+  var F = document.getElementById('ev-form');
+  if (!F) return;
+  function utms(){
+    var t = {}; try {
+      new URLSearchParams(location.search).forEach(function(v,k){
+        if (/^utm_|^gclid$|^fbclid$|^li_fat_id$/.test(k)) t[k] = v;
+      });
+    } catch(e){}
+    return t;
   }
-  window.addEventListener('scroll', arrancar, {once:true, passive:true});
-  document.querySelectorAll('a[href="#pedir"]').forEach(function(a){ a.addEventListener('click', arrancar); });
-  window.addEventListener('load', function(){ setTimeout(arrancar, 3000); });
-})();
-// esconder o "a carregar" quando o formulario do CRM aparecer
-(function(){
-  var alvo=document.querySelector('.formbox'), aviso=document.querySelector('.formbox .espera');
-  if(!alvo||!aviso)return;
-  var mo=new MutationObserver(function(){
-    if(alvo.querySelector('.b24-form, iframe, form')){aviso.remove();mo.disconnect();}
+  F.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    if (document.getElementById('f-site').value) return;
+    if (!F.reportValidity()) return;
+    var btn = document.getElementById('f-enviar'), erro = document.getElementById('f-erro');
+    btn.disabled = true; btn.textContent = 'A enviar…'; erro.hidden = true;
+    var fd = new FormData();
+    fd.set('id', '332'); fd.set('sec', 'uv21ou'); fd.set('lang', 'br');
+    fd.set('timeZoneOffset', String(new Date().getTimezoneOffset()));
+    fd.set('properties', '{}'); fd.set('consents', '{}'); fd.set('entities', '[]');
+    fd.set('security_sign', '');
+    fd.set('trace', JSON.stringify({ url: location.href,
+      device: { isMobile: /Mobi|Android/i.test(navigator.userAgent) },
+      tags: { ts: Math.floor(Date.now()/1000), list: utms(), gclid: null },
+      client: {}, pages: { list: [[location.href, Math.floor(Date.now()/1000), document.title.slice(0,40)]] } }));
+    fd.set('values', JSON.stringify({
+      CONTACT_NAME: [document.getElementById('f-nome').value.trim()],
+      CONTACT_EMAIL: [document.getElementById('f-email').value.trim()],
+      CONTACT_PHONE: [document.getElementById('f-tel').value.trim()],
+      COMPANY_TITLE: [document.getElementById('f-emp').value.trim()]
+    }));
+    fetch('https://my.erp24.pt/bitrix/services/main/ajax.php?action=crm.site.form.fill', { method: 'POST', body: fd })
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        if (j && j.result && j.result.resultId) {
+          F.hidden = true; document.getElementById('f-sucesso').hidden = false;
+          if (window.gtag) gtag('event', 'generate_lead', { form: 'lp_mentoria' });
+          if (window.fbq) fbq('track', 'Lead');
+        } else { throw new Error('sem resultId'); }
+      })
+      .catch(function(){ erro.hidden = false; btn.disabled = false; btn.textContent = 'Pedir a conversa de diagnóstico →'; });
   });
-  mo.observe(alvo,{childList:true,subtree:true});
-  setTimeout(function(){ if(aviso.parentNode) aviso.textContent='O formulário está demorado a carregar — se preferires, usa o WhatsApp em baixo.'; },12000);
 })();
 </script>
 <script defer src="/assets/js/medicao.js?v=522effba"></script>
