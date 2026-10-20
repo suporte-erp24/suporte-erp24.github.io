@@ -70,6 +70,40 @@ h2{font-size:clamp(1.7rem,4vw,2.5rem);margin:.6rem 0 .9rem}
 /* AGENTES */
 .agentes{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem}
 .agentes span{border:1px solid var(--gold-bd);background:var(--bg3);border-radius:999px;padding:.5rem 1.1rem;font-size:.85rem;color:#e8e8e8}
+/* BENTO — o que esta incluido */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.8rem}
+.bt{background:var(--bg2);border:1px solid var(--linha);border-radius:14px;padding:1.5rem;position:relative;display:flex;flex-direction:column}
+.bt h3{font-size:1.08rem;margin:.5rem 0 .5rem}
+.bt p{color:var(--mid);font-size:.9rem;margin-bottom:0}
+.bt p b{color:#e6e6e6;font-weight:600}
+.bt-tag{align-self:flex-start;font-family:'Space Mono',monospace;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-bd);border-radius:999px;padding:.25rem .7rem}
+.bt-pe{display:block;margin-top:auto;padding-top:1rem;font-family:'Space Mono',monospace;font-size:.66rem;letter-spacing:.06em;color:#8a8a8a}
+.bt-sessoes{grid-column:span 2}
+.bt-agentes{grid-column:span 2;grid-row:span 2;border-color:var(--gold-bd);background:linear-gradient(180deg,#0f0d07 0%,var(--bg2) 55%)}
+.bt-equipa,.bt-account{grid-column:span 1}
+.bt-presenciais{grid-column:span 2}
+.bt-dgert{grid-column:span 2}
+/* micro-visuais */
+.cadencia{display:grid;grid-template-columns:repeat(8,1fr);gap:.3rem;margin-top:auto;padding-top:1.2rem}
+.cadencia i{height:8px;border-radius:2px;background:#1f1f1f}
+.cadencia i.on{background:var(--gold);box-shadow:0 0 10px rgba(212,175,55,.45)}
+.ag-lista{list-style:none;margin:1.1rem 0 0;flex:1 1 auto;display:flex;flex-direction:column;justify-content:space-evenly;gap:.55rem;min-height:0}
+.ag-lista li{display:flex;flex-direction:column;border-left:2px solid var(--gold-bd);padding-left:.8rem}
+.ag-lista b{font-size:.88rem;color:#f0f0f0;font-weight:600}
+.ag-lista span{font-size:.78rem;color:var(--mid)}
+.equipa-av{display:flex;margin-top:auto;padding-top:1.2rem}
+.equipa-av i{width:38px;height:38px;border-radius:50%;background:var(--bg3);border:1px solid var(--gold-bd);display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:.6rem;color:var(--gold);font-style:normal;margin-right:-10px}
+.mini-grupo{display:flex;gap:.4rem;margin-top:auto;padding-top:1.2rem}
+.mini-grupo i{width:16px;height:16px;border-radius:50%;border:1px solid #333;background:#171717}
+.mini-grupo i.eu{background:var(--gold);border-color:var(--gold);box-shadow:0 0 10px rgba(212,175,55,.5)}
+.trimestres{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-top:auto;padding-top:1.2rem}
+.trimestres span{text-align:center;font-family:'Space Mono',monospace;font-size:.68rem;color:var(--gold);border:1px solid var(--gold-bd);border-radius:6px;padding:.45rem 0;background:rgba(212,175,55,.05)}
+.bt-dgert .selo{position:absolute;right:1.2rem;top:1.2rem;font-size:1.9rem;opacity:.5}
+@media(max-width:900px){.bento{grid-template-columns:repeat(2,1fr)}
+.bt-sessoes,.bt-agentes,.bt-presenciais,.bt-dgert{grid-column:span 2}
+.bt-agentes{grid-row:auto}}
+@media(max-width:560px){.bento{grid-template-columns:1fr}
+.bt-sessoes,.bt-agentes,.bt-presenciais,.bt-dgert,.bt-equipa,.bt-account{grid-column:span 1}}
 /* MENTORES */
 .mentor{background:var(--bg2);border:1px solid var(--linha);border-radius:12px;padding:1.7rem}
 .mentor .eyebrow{display:block;margin-bottom:.4rem}
@@ -277,16 +311,61 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
   <div class="wrap">
     <span class="eyebrow">O que está incluído</span>
     <h2>Tecnologia, processos e IA.<br>Tudo o que precisas para implementar.</h2>
-    <div class="grid g3">
-      <div class="card"><h3>2 sessões mensais ao vivo</h3><p>Conteúdo real, convidados e hotseats — o teu caso analisado ao vivo. Com gravação.</p></div>
-      <div class="card"><h3>Sessões abertas à equipa</h3><p>Processos com o Gabriel, tecnologia e IA com o Andreas. Até 2 colaboradores incluídos — a transformação falha quando só o CEO aprende.</p></div>
-      <div class="card"><h3>Accountability a sério</h3><p>Mini-grupo de 5-6 empresas do teu nível + sessão individual semestral com re-diagnóstico. Sem desculpas, sem exceções.</p></div>
-      <div class="card"><h3>Presenciais trimestrais</h3><p>Fechar o trimestre, rever a execução e definir o roadmap seguinte — com networking entre pares.</p></div>
-      <div class="card"><h3>5 agentes IA configurados</h3><p>Treinados com os dados da tua empresa, integrados com CRM, email e WhatsApp. BYOK: os teus dados ficam na tua conta.</p></div>
-      <div class="card"><h3>Certificação DGERT</h3><p>Programa certificado e elegível para co-financiamento IEFP/FSE — empresas elegíveis reduzem significativamente o investimento real.</p></div>
-    </div>
-    <div class="agentes">
-      <span>🤖 Co-CEO</span><span>🤖 Dir. Comercial</span><span>🤖 Dir. Operações</span><span>🤖 Gabinete de Processos</span><span>🤖 Dir. Marketing</span>
+    <div class="bento">
+
+      <article class="bt bt-sessoes">
+        <span class="bt-tag">2× por mês</span>
+        <h3>Sessões ao vivo com os mentores</h3>
+        <p>Conteúdo real, convidados e <b>hotseats</b> — o teu caso analisado ao vivo pela tribo e pelos mentores. Fica gravado.</p>
+        <div class="cadencia" aria-hidden="true">
+          <i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i>
+          <i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i>
+        </div>
+        <span class="bt-pe">4 semanas · 2 sessões</span>
+      </article>
+
+      <article class="bt bt-agentes">
+        <span class="bt-tag">Plataforma EVOLUI</span>
+        <h3>5 agentes de IA configurados para a tua empresa</h3>
+        <p>Não são demos. Treinados com os teus dados, integrados com CRM, email e WhatsApp.</p>
+        <ul class="ag-lista">
+          <li><b>Co-CEO</b><span>Decisão estratégica com os teus números</span></li>
+          <li><b>Dir. Comercial</b><span>Pipeline, propostas e follow-up</span></li>
+          <li><b>Dir. Operações</b><span>KPIs, alertas e monitorização</span></li>
+          <li><b>Gabinete de Processos</b><span>Mapeamento, SOPs e melhoria</span></li>
+          <li><b>Dir. Marketing</b><span>Conteúdo, campanhas e análise</span></li>
+        </ul>
+        <span class="bt-pe">🔑 BYOK — a tua API key, os teus dados na tua conta</span>
+      </article>
+
+      <article class="bt bt-equipa">
+        <span class="bt-tag">Até 2 colaboradores</span>
+        <h3>Sessões abertas à equipa</h3>
+        <p>Processos com o Gabriel, tecnologia e IA com o Andreas. A transformação falha quando só o CEO aprende.</p>
+        <div class="equipa-av" aria-hidden="true"><i>CEO</i><i>+1</i><i>+2</i></div>
+      </article>
+
+      <article class="bt bt-account">
+        <span class="bt-tag">Mensal</span>
+        <h3>Accountability a sério</h3>
+        <p>Mini-grupo de 5–6 empresas <b>do teu nível</b> + sessão individual semestral com re-diagnóstico.</p>
+        <div class="mini-grupo" aria-hidden="true"><i></i><i></i><i class="eu"></i><i></i><i></i><i></i></div>
+      </article>
+
+      <article class="bt bt-presenciais">
+        <span class="bt-tag">4× por ano</span>
+        <h3>Presenciais trimestrais</h3>
+        <p>Fechar o trimestre, rever a execução e definir o roadmap seguinte — com networking entre pares.</p>
+        <div class="trimestres" aria-hidden="true"><span>T1</span><span>T2</span><span>T3</span><span>T4</span></div>
+      </article>
+
+      <article class="bt bt-dgert">
+        <span class="bt-tag">Certificado</span>
+        <h3>DGERT · co-financiável</h3>
+        <p>Programa certificado e elegível para <b>IEFP/FSE</b> — empresas elegíveis reduzem significativamente o investimento real.</p>
+        <span class="selo" aria-hidden="true">🎓</span>
+      </article>
+
     </div>
   </div>
 </section>
