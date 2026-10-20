@@ -73,9 +73,12 @@ h2{font-size:clamp(1.7rem,4vw,2.5rem);margin:.6rem 0 .9rem}
 /* MENTORES */
 .mentor{background:var(--bg2);border:1px solid var(--linha);border-radius:12px;padding:1.7rem}
 .mentor .eyebrow{display:block;margin-bottom:.4rem}
-.mentor-top{display:flex;gap:1.1rem;align-items:center;margin-bottom:.9rem}
-.mentor-foto{width:104px;height:104px;border-radius:50%;object-fit:cover;border:2px solid var(--gold-bd);flex:0 0 auto}
-@media(max-width:520px){.mentor-foto{width:84px;height:84px}}
+.mentor{display:flex;gap:1.3rem}
+.mentor-foto{width:150px;aspect-ratio:2/3;height:auto;object-fit:cover;border-radius:10px;border:1px solid var(--gold-bd);flex:0 0 auto;align-self:flex-start}
+.mentor-corpo{min-width:0}
+.mentor-corpo .cargo{margin-bottom:.6rem}
+@media(max-width:560px){.mentor{flex-direction:column}
+.mentor-foto{width:62%;max-width:230px;margin:0 auto}}
 .mentor h3{font-size:1.25rem}
 .mentor p.cargo{color:var(--gold);font-size:.85rem;margin:.15rem 0 .7rem}
 .mentor p{color:var(--mid);font-size:.92rem}
@@ -117,6 +120,23 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
 /* VIDEO */
 .vid-caixa{aspect-ratio:16/9;max-width:880px;margin:1.8rem auto 0;border:1px solid var(--gold-bd);border-radius:14px;overflow:hidden;background:#000;box-shadow:0 20px 60px rgba(0,0,0,.5)}
 .vid-caixa iframe{width:100%;height:100%;border:0;display:block}
+/* GANCHOS */
+.hero-sais{display:flex;gap:1.4rem;justify-content:center;flex-wrap:wrap;margin-top:1.3rem}
+.hero-sais span{font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:.06em;color:#e8d9a8;background:rgba(0,0,0,.45);border:1px solid rgba(212,175,55,.25);border-radius:999px;padding:.38rem .9rem}
+.pq-grid{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.pq-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.pq-grid{grid-template-columns:1fr}}
+.card.stat b{display:block;font-family:'Outfit',sans-serif;font-size:2.1rem;font-weight:900;color:var(--gold);margin-bottom:.35rem}
+.card.stat .fonte{display:block;margin-top:.6rem;font-family:'Space Mono',monospace;font-size:.64rem;letter-spacing:.08em;color:#777;text-transform:uppercase}
+.cta-meio{text-align:center;margin-top:2.4rem}
+.cta-meio span{display:block;margin-top:.8rem;color:var(--mid);font-size:.82rem}
+.passos3{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin:1.8rem auto 0;max-width:680px}
+.passos3 div{flex:1 1 180px;display:flex;gap:.8rem;align-items:center;text-align:left;background:var(--bg2);border:1px solid var(--linha);border-radius:10px;padding:.9rem 1rem}
+.passos3 b{font-family:'Outfit',sans-serif;font-size:1.3rem;color:var(--gold)}
+.passos3 span{font-size:.85rem;color:#ddd;line-height:1.35}
+.passos3 em{font-style:normal;color:var(--mid);font-size:.76rem}
+.fgarantia{margin-top:1rem;font-size:.82rem;color:#cbbd8b}
+.fvagas{margin-top:.5rem;font-size:.78rem;color:var(--mid)}
 /* FORM */
 .formsec{background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(212,175,55,.07) 0%,transparent 70%),var(--bg)}
 .formbox{max-width:680px;margin:2rem auto 0;background:var(--bg3);border:1px solid var(--gold-bd);border-radius:14px;padding:2rem;min-height:280px}
@@ -165,6 +185,11 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
     <p class="sub">O programa de <b>transformação digital e IA</b> para CEOs de PMEs: diagnóstico de maturidade digital, roadmap de 90 dias e implementação de tecnologia, automação e agentes de IA — acompanhada por dois CEOs que fazem isto todos os dias.</p>
     <a class="btn" href="#pedir">Quero a conversa de diagnóstico →</a>
     <span class="hero-note">Sem compromisso. Sem preço escondido — uma conversa primeiro, da nossa parte e da tua.</span>
+    <div class="hero-sais">
+      <span>✓ Score de maturidade digital</span>
+      <span>✓ Roadmap de 90 dias</span>
+      <span>✓ 5 agentes de IA configurados</span>
+    </div>
     <div class="prova">
       <div><b>200+</b><span>PMEs acompanhadas</span></div>
       <div><b>94%</b><span>recomendariam</span></div>
@@ -184,6 +209,22 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
       <div class="card"><span class="n">02</span><h3>A máquina para quando tu paras.</h3><p>Toda a informação crítica está na tua cabeça. A empresa depende de ti para cada decisão.</p></div>
       <div class="card"><span class="n">03</span><h3>Compraste ferramentas. O caos mudou de forma.</h3><p>CRM, ERP, automações: cada um no seu silo. Acabaste a copiar-colar entre sistemas.</p></div>
     </div>
+  </div>
+</section>
+
+
+<!-- PORQUÊ AGORA -->
+<section class="sec pq-agora">
+  <div class="wrap">
+    <span class="eyebrow">Porquê agora</span>
+    <h2>O custo de adiar está a crescer.</h2>
+    <div class="grid pq-grid">
+      <div class="card stat"><b>70%</b><p>dos projetos de transformação digital falham por falta de execução</p><span class="fonte">McKinsey, 2024</span></div>
+      <div class="card stat"><b>1 em 10</b><p>empresas que fazem diagnóstico implementam algo nos 90 dias seguintes</p><span class="fonte">Gartner</span></div>
+      <div class="card stat"><b>2–5×</b><p>mais rápida a evolução com acompanhamento vs. executar sozinho</p><span class="fonte">Harvard Business Review</span></div>
+      <div class="card stat"><b>41%</b><p>das empresas portuguesas já usam IA — com +30% de receita média reportada</p><span class="fonte">AWS / Strand Partners, 2025</span></div>
+    </div>
+    <p class="fw-nota">Não é falta de vontade. É falta de estrutura, método e acompanhamento por quem já percorreu — e percorre — o caminho.</p>
   </div>
 </section>
 
@@ -227,6 +268,7 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
     <div class="vid-caixa">
       <iframe data-ev-src="https://www.youtube.com/embed/xrkcfV5Wkrc?rel=0&amp;modestbranding=1" title="Testemunhos — Evoluir Empresas AI" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
     </div>
+    <div class="cta-meio"><a class="btn" href="#pedir">Quero perceber se faz sentido →</a><span>Sem compromisso · Garantia de 30 dias · Co-financiável IEFP/FSE</span></div>
   </div>
 </section>
 
@@ -256,28 +298,24 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
     <h2>Não são consultores teóricos.<br>São operadores no terreno.</h2>
     <div class="grid g2">
       <div class="mentor">
-        <div class="mentor-top">
-          <img src="/assets/img/mentor-gabriel-240.webp" alt="Gabriel Gonçalves" width="240" height="240" loading="lazy" decoding="async" class="mentor-foto">
-          <div>
-            <span class="eyebrow">Co-fundador · ERP24</span>
-            <h3>Gabriel Gonçalves</h3>
-            <p class="cargo">CEO ERP24 · Doutorando em Agentes IA</p>
-          </div>
+        <img src="/assets/img/mentor-gabriel-360.webp" alt="Gabriel Gonçalves" width="360" height="540" loading="lazy" decoding="async" class="mentor-foto">
+        <div class="mentor-corpo">
+          <span class="eyebrow">Co-fundador · ERP24</span>
+          <h3>Gabriel Gonçalves</h3>
+          <p class="cargo">CEO ERP24 · Doutorando em Agentes IA</p>
+          <p>Especialista em BPM e transformação digital. 20 anos a implementar sistemas em PMEs portuguesas. Professor em MBAs executivos.</p>
+          <ul><li>200+ PMEs</li><li>20+ anos</li><li>PhD Agentes IA</li></ul>
         </div>
-        <p>Especialista em BPM e transformação digital. 20 anos a implementar sistemas em PMEs portuguesas. Professor em MBAs executivos.</p>
-        <ul><li>200+ PMEs</li><li>20+ anos</li><li>PhD Agentes IA</li></ul>
       </div>
       <div class="mentor">
-        <div class="mentor-top">
-          <img src="/assets/img/mentor-andreas-240.webp" alt="Andreas Vilela" width="240" height="240" loading="lazy" decoding="async" class="mentor-foto">
-          <div>
-            <span class="eyebrow">Co-fundador · SHARKCODERS</span>
-            <h3>Andreas Vilela</h3>
-            <p class="cargo">CEO SHARKCODERS · Eng. Informático</p>
-          </div>
+        <img src="/assets/img/mentor-andreas-360.webp" alt="Andreas Vilela" width="360" height="540" loading="lazy" decoding="async" class="mentor-foto">
+        <div class="mentor-corpo">
+          <span class="eyebrow">Co-fundador · SHARKCODERS</span>
+          <h3>Andreas Vilela</h3>
+          <p class="cargo">CEO SHARKCODERS · Eng. Informático</p>
+          <p>Empreendedor tecnológico com software usado por mais de 30 milhões de pessoas. Fundou a maior rede portuguesa de escolas de tecnologia.</p>
+          <ul><li>30M+ utilizadores</li><li>30+ escolas</li><li>15+ anos tech</li></ul>
         </div>
-        <p>Empreendedor tecnológico com software usado por mais de 30 milhões de pessoas. Fundou a maior rede portuguesa de escolas de tecnologia.</p>
-        <ul><li>30M+ utilizadores</li><li>30+ escolas</li><li>15+ anos tech</li></ul>
       </div>
     </div>
   </div>
@@ -325,6 +363,7 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
         <li>Esperas resultados sem mudar processos ou hábitos</li>
       </ul></div>
     </div>
+    <div class="cta-meio"><a class="btn" href="#pedir">Quero perceber se faz sentido →</a><span>Sem compromisso · Garantia de 30 dias · Co-financiável IEFP/FSE</span></div>
   </div>
 </section>
 
@@ -337,6 +376,7 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
       <details><summary>Quanto tempo exige por semana?</summary><p>Entre as sessões e a implementação, conta com 3 a 5 horas semanais. O programa tem ritmo definido — é isso que o faz funcionar.</p></details>
       <details><summary>Preciso de perceber de IA ou de programação?</summary><p>Não. O programa é para decisores, não para programadores. A tecnologia é implementada contigo, sem linguagem técnica e sem dependência de developers.</p></details>
       <details><summary>Como funciona a conversa de diagnóstico?</summary><p>Preenches o formulário, marcamos uma conversa e percebemos juntos se faz sentido — da nossa parte e da tua. Não há preço nesta página porque primeiro queremos perceber o teu contexto. Sem pressão, sem compromisso.</p></details>
+      <details><summary>Quanto custa?</summary><p>O investimento depende do formato (semestral ou anual) e é apresentado na conversa de diagnóstico — com tudo incluído e sem surpresas. O programa é certificado DGERT e elegível para co-financiamento IEFP/FSE, que reduz significativamente o custo real para empresas elegíveis.</p></details>
       <details><summary>E se eu entrar e me arrepender?</summary><p>Tens 30 dias de garantia: devolvemos o investimento sem perguntas. O programa é certificado DGERT e elegível para co-financiamento IEFP/FSE.</p></details>
     </div>
   </div>
@@ -348,6 +388,11 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
     <span class="eyebrow">Próximo passo</span>
     <h2>Pede a tua conversa de diagnóstico.</h2>
     <p class="lead" style="margin:0 auto">Uma conversa para perceber se faz sentido. Respondemos no próprio dia útil.</p>
+    <div class="passos3">
+      <div><b>1</b><span>Preenches o formulário<br><em>30 segundos</em></span></div>
+      <div><b>2</b><span>Conversa de diagnóstico<br><em>30–45 min, online</em></span></div>
+      <div><b>3</b><span>Decides com clareza<br><em>sem pressão</em></span></div>
+    </div>
     <div class="formbox">
       <form id="ev-form" novalidate>
         <div class="fcampo"><label for="f-nome">Nome *</label><input id="f-nome" name="nome" type="text" autocomplete="name" required></div>
@@ -357,6 +402,8 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
         <input type="text" name="website" id="f-site" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-5000px;height:0;opacity:0">
         <label class="fconsent"><input type="checkbox" id="f-ok" required> <span>Li e aceito a <a href="/politica-de-privacidade/" target="_blank" rel="noopener">Política de Privacidade</a>. *</span></label>
         <button type="submit" class="btn fbtn" id="f-enviar">Pedir a conversa de diagnóstico →</button>
+        <p class="fgarantia">🛡️ Garantia de 30 dias — devolvemos sem perguntas &nbsp;·&nbsp; 🎓 Certificado DGERT, co-financiável IEFP/FSE</p>
+        <p class="fvagas">Trabalhamos em mini-grupos de 5–6 empresas por nível de maturidade — as vagas de cada turma são, por isso, limitadas.</p>
         <p class="ferro" id="f-erro" hidden>Não foi possível enviar. Tenta outra vez — ou fala connosco no WhatsApp em baixo.</p>
       </form>
       <div id="f-sucesso" hidden>
