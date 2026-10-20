@@ -73,6 +73,9 @@ h2{font-size:clamp(1.7rem,4vw,2.5rem);margin:.6rem 0 .9rem}
 /* MENTORES */
 .mentor{background:var(--bg2);border:1px solid var(--linha);border-radius:12px;padding:1.7rem}
 .mentor .eyebrow{display:block;margin-bottom:.4rem}
+.mentor-top{display:flex;gap:1.1rem;align-items:center;margin-bottom:.9rem}
+.mentor-foto{width:104px;height:104px;border-radius:50%;object-fit:cover;border:2px solid var(--gold-bd);flex:0 0 auto}
+@media(max-width:520px){.mentor-foto{width:84px;height:84px}}
 .mentor h3{font-size:1.25rem}
 .mentor p.cargo{color:var(--gold);font-size:.85rem;margin:.15rem 0 .7rem}
 .mentor p{color:var(--mid);font-size:.92rem}
@@ -239,16 +242,26 @@ details p{color:var(--mid);font-size:.92rem;margin-top:.7rem;padding-right:2rem}
     <h2>Não são consultores teóricos.<br>São operadores no terreno.</h2>
     <div class="grid g2">
       <div class="mentor">
-        <span class="eyebrow">Co-fundador · ERP24</span>
-        <h3>Gabriel Gonçalves</h3>
-        <p class="cargo">CEO ERP24 · Doutorando em Agentes IA</p>
+        <div class="mentor-top">
+          <img src="/assets/img/mentor-gabriel-240.webp" alt="Gabriel Gonçalves" width="240" height="240" loading="lazy" decoding="async" class="mentor-foto">
+          <div>
+            <span class="eyebrow">Co-fundador · ERP24</span>
+            <h3>Gabriel Gonçalves</h3>
+            <p class="cargo">CEO ERP24 · Doutorando em Agentes IA</p>
+          </div>
+        </div>
         <p>Especialista em BPM e transformação digital. 20 anos a implementar sistemas em PMEs portuguesas. Professor em MBAs executivos.</p>
         <ul><li>200+ PMEs</li><li>20+ anos</li><li>PhD Agentes IA</li></ul>
       </div>
       <div class="mentor">
-        <span class="eyebrow">Co-fundador · SHARKCODERS</span>
-        <h3>Andreas Vilela</h3>
-        <p class="cargo">CEO SHARKCODERS · Eng. Informático</p>
+        <div class="mentor-top">
+          <img src="/assets/img/mentor-andreas-240.webp" alt="Andreas Vilela" width="240" height="240" loading="lazy" decoding="async" class="mentor-foto">
+          <div>
+            <span class="eyebrow">Co-fundador · SHARKCODERS</span>
+            <h3>Andreas Vilela</h3>
+            <p class="cargo">CEO SHARKCODERS · Eng. Informático</p>
+          </div>
+        </div>
         <p>Empreendedor tecnológico com software usado por mais de 30 milhões de pessoas. Fundou a maior rede portuguesa de escolas de tecnologia.</p>
         <ul><li>30M+ utilizadores</li><li>30+ escolas</li><li>15+ anos tech</li></ul>
       </div>
